@@ -6,6 +6,8 @@ head(util,50)
 str(util)
 summary(util)
 
+
+library(dplyr)
 ##Derive utilization
 util_new <-util%>%
   mutate(Utilization=1-Percent.Idle)%>%
